@@ -10,10 +10,6 @@ export default function Home() {
     })
    
 
-    fetch('/api/hello',{
-        method : 'post',
-        body: JSON.stringify(formData)
-    })
     console.log(formData)
 }
   return (

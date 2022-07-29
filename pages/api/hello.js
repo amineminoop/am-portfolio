@@ -2,6 +2,5 @@
 
 export default function handler(req, res) {
   res.status(200).json({ name: 'Amine menhane' })
-  const body = JSON.parse(req.body);
-  console.log('oki')
+
 }
