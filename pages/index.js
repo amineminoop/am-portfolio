@@ -10,6 +10,10 @@ export default function Home() {
     })
    
 
+    fetch('https://am-amineminoop.vercel.app/api/hello',{
+        method : 'post',
+        body: JSON.stringify(formData)
+    })
     console.log(formData)
 }
   return (
