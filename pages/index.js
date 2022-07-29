@@ -3,7 +3,14 @@ import Head from 'next/head'
 export default function Home() {
   async function handleOnSubmit(e) {
     e.preventDefault();
-    
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach(field => {
+        if (!field.name) return;
+        formData[field.name] = field.value;
+    })
+   
+
+    console.log(formData)
 }
   return (
 
